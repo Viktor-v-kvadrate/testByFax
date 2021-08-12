@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-regular';
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+#howSendFax {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 30;
+  padding-top: 50px;
+
+
+  #bgWhite {
+    background-image: url("../img/bgWhite.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    z-index: 30;
+    top: -95px;
+    right: 0;
+    left: 0;
+    max-width: 1600px;
+    height: 100px;
+  }
+}
+
+.howSendFax {
+  max-width: 970px;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 58px;
+    font-weight: 600;
+    color: #224a60;
+  }
+
+  & > p {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #224a60;
+    margin-bottom: 44px;
+  }
+}
+
+
+.boxCard {
+  text-align: center;
+  display: flex;
+  padding-bottom: 90px;
+
+  .cardArrow {
+    margin-top: 50px;
+    min-width: 61px;
+    height: 21px;
+    background-image: url("../img/cardArrow.png");
+    background-repeat: no-repeat;
+  }
+
+  .itemImg {
+    margin: 0 auto 23px;
+    background-image: url("../img/polygon.png");
+    background-repeat: no-repeat;
+    width: 106px;
+    height: 118px;
+
+    .imgRight {
+      background-image: url("../img/polygonDark.png");
+      background-repeat: no-repeat;
+      width: 54px;
+      height: 118px;
+      float: right;
+    }
+
+    .imgCenter {
+      position: absolute;
+      width: 106px;
+      height: 118px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+  }
+
+  span {
+    font-family: "BebasNeue", sans-serif;
+    font-size: 22px;
+    color: #2c5871;
+  }
+
+  p {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 14px;
+    color: #7b7b7b;
+    margin-top: 30px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .howSendFax h2 {
+    font-size: 50px;
+  }
+
+  .howSendFax > p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .cardItem span {
+    font-size: 18px;
+  }
+  .cardItem p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .howSendFax h2 {
+    font-size: 45px;
+  }
+
+  .howSendFax > p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .howSendFax h2 {
+    font-size: 32px;
+  }
+
+  .howSendFax > p {
+    font-size: 17px;
+    margin-bottom: 18px;
+  }
+
+  .cardItem span {
+    font-size: 20px;
+    width: 174px;
+    padding-top: 38px;
+    text-align: left;
+  }
+  .cardItem p {
+    display: none;
+  }
+  .boxCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardItem {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 130px;
+  }
+  .cardArrow {
+    display: none;
+  }
+}

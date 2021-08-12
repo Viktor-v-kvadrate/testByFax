@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-regular';
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+#footer {
+  background-color: #0f303f;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 26px 0 34px 0;
+}
+
+
+.blockContent {
+  display: flex;
+
+  .footerLogo {
+    background-image: url("../img/footerLogo.png");
+    width: 139px;
+    height: 44px;
+    margin-right: 43px;
+  }
+
+  .footerText {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+
+    span {
+      font-family: 'OpenSans-Regular', sans-serif;
+      font-size: 16px;
+      color: #2c5871;
+
+      &:nth-child(1) {
+        padding-right: 18px;
+      }
+    }
+
+
+  }
+}
+
+
+.boxIcon.cloneIcon {
+  display: flex;
+  justify-content: space-between;
+  width: 111px;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+
+  div {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      background-color: #2ab8c5;
+      border-color: #2ab8c5;
+    }
+  }
+}
+
+
+.twitter2, .vk2, .fb2 {
+  display: none;
+}
+
+.boxIcon div:hover .twitter2,
+.boxIcon div:hover .vk2,
+.boxIcon div:hover .fb2 {
+  display: block;
+}
+
+.boxIcon div:hover .twitter1,
+.boxIcon div:hover .fb1,
+.boxIcon div:hover .vk1 {
+  display: none;
+}
+
+
+.gropeIcon.cloneGr{
+  display: none;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+
+  div {
+    margin-right: 7px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: #2e6483;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+  }
+}
+
+
+.select.cloneSelect {
+  display: none;
+  position: relative;
+  color: #ffffff;
+
+  .selectHeader {
+    display: flex;
+    height: 31px;
+    cursor: pointer;
+
+    .selectValue {
+      padding: 6px 0 6px 11px;
+      width: 90px;
+      background-color: #092430;
+      border-radius: 7px 0 0 7px;
+      border: 1px solid #2d556c;
+      font-family: 'OpenSans-Regular', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    .selectArrow {
+      width: 32px;
+      background-color: #2d556c;
+      border-radius: 0 7px 7px 0;
+      border: 1px solid #2d556c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+  }
+
+  .selectBody {
+    display: none;
+    position: absolute;
+    top: 31px;
+    width: 122px;
+    background-color: #092430;
+    border-radius: 7px;
+
+    .selectItem {
+      width: 100%;
+      cursor: pointer;
+      font-family: 'OpenSans-Regular', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      padding: 6px 0 6px 11px;
+
+      &:hover {
+        background-color: #2c5e7a;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+.select.active .selectBody {
+  display: block;
+}
+
+
+.newFooter {
+  max-width: 100%;
+  background-color: #092430;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 5px;
+
+  span {
+    display: block;
+    color: #1c4053;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .boxIcon.cloneIcon {
+    display: none;
+  }
+
+  .gropeIcon.cloneGr {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .gropeIcon.cloneGr {
+    display: none;
+  }
+
+  .newFooter, .newFooter .gropeIcon.bottonGr {
+    display: flex;
+  }
+
+  .footerText span:nth-child(1) {
+    display: none;
+  }
+
+  .blockContent {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 660px) {
+
+  .select.cloneSelect {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .blockContent {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerText {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .footerText span {
+    font-size: 13px;
+  }
+}

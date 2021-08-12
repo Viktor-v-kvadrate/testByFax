@@ -1,0 +1,324 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-regular';
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+#headerContainerBotton {
+  background-color: #2c5871;
+
+  .bgWorld {
+    height: 675px;
+    background-image: url("../img/mapWorld.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (max-width: 768px) {
+      height: 400px;
+
+    }
+
+    .headerBotton {
+      max-width: 1100px;
+      margin: 0 auto;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      @media (max-width: 768px) {
+        justify-content: center;
+
+      }
+
+      .boxNav {
+        display: flex;
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-family: 'OpenSans-Regular', sans-serif;
+          font-weight: 600;
+          padding: 10px 23px;
+          border-radius: 25px;
+
+          &:nth-child(2) {
+            text-decoration: underline #ffffff 1px;
+          }
+
+          &:nth-child(2):hover {
+            text-decoration: underline #000000 1px;
+          }
+
+          &:hover {
+            background-color: #c1d64b;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+.boxIcon {
+  display: flex;
+  justify-content: space-between;
+  width: 111px;
+
+  div {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+
+.twitter2, .vk2, .fb2 {
+  display: none;
+}
+
+.boxIcon div:hover .twitter2,
+.boxIcon div:hover .vk2,
+.boxIcon div:hover .fb2 {
+  display: block;
+}
+
+.boxIcon div:hover .twitter1,
+.boxIcon div:hover .fb1,
+.boxIcon div:hover .vk1 {
+  display: none;
+}
+
+.boxIcon div:hover {
+  background-color: #2ab8c5;
+  border-color: #2ab8c5;
+}
+
+.sendFax {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1100px;
+
+
+  h1 {
+    font-family: "BebasNeue", sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    color: #ffffff;
+    margin-top: 70px;
+  }
+
+  span {
+    font-family: "BebasNeue", sans-serif;
+    font-size: 45px;
+    color: #c1d64b;
+  }
+
+  p {
+    font-size: 21px;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #d6dce0;
+    margin: 48px 0;
+  }
+
+  button {
+    padding: 17px 20px;
+    border-radius: 10px;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    background-color: #cee355;
+    box-shadow: 0 5px #7e9111, 0 10px #1f4a61;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+  }
+}
+
+
+.mobile {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background-image: url("../img/mobile.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 767px;
+  height: 670px;
+}
+
+#br1, #br3, #br4, #br5 {
+  display: none;
+}
+
+@media (max-width: 1140px) {
+  .bgWorld, .sendFax {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .faxH1 h1 {
+    font-size: 65px;
+    margin-top: 56px;
+  }
+
+  .faxH1 span {
+    font-size: 36px;
+  }
+
+  .faxH1 p {
+    font-size: 20px;
+    margin: 43px 0;
+  }
+
+  #br1 {
+    display: block;
+  }
+
+  #br2 {
+    display: none;
+  }
+
+  .mobile {
+    width: 650px;
+    top: -75px;
+  }
+
+  .bgWorld {
+    background-size: cover;
+    height: 590px;
+  }
+}
+
+@media (max-width: 992px) {
+  .boxIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 945px) {
+  .faxH1 h1 {
+    font-size: 60px;
+    margin-top: 32px;
+  }
+
+  .faxH1 span {
+    font-size: 30px;
+  }
+
+  .faxH1 p {
+    font-size: 18px;
+    margin: 40px 0;
+  }
+
+  #br1, #br2 {
+    display: none;
+  }
+
+  #br3, #br4 {
+    display: block;
+  }
+
+  .mobile {
+    width: 600px;
+    height: 500px;
+    top: -20px;
+  }
+
+  .bgWorld {
+    background-size: cover;
+    height: 520px;
+  }
+}
+
+@media (max-width: 860px) {
+  .mobile {
+    width: 500px;
+  }
+
+  .bgWorld {
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .boxNav {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .sendFax {
+    width: 100%;
+    padding: 0;
+  }
+
+  .faxH1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .faxH1 h1 {
+    font-size: 44px;
+    margin: 16px auto 10px;
+  }
+
+  .faxH1 span {
+    font-size: 22px;
+  }
+
+  .faxH1 button {
+    width: 213px;
+    height: 49px;
+    margin: 27px auto 32px;
+    font-size: 14px;
+  }
+
+  .faxH1 p {
+    display: none;
+  }
+
+  .bgWorld {
+    height: auto;
+  }
+
+  #br5 {
+    display: block;
+  }
+  .boxImg {
+    margin-top: 18px;
+  }
+  .headerBotton {
+    justify-content: center;
+  }
+}
+
